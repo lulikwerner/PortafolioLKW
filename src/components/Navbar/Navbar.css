@@ -3,53 +3,52 @@
 
     .Nav {
         margin-top: 0;
-        height:15vh;
+        height: 15vh;
         width: 100%;
         display: flex;
         flex-direction: row;
         font-family: "Helvetica Neue LT Com 37 Thin Condensed";
-        font-weight:lighter;
+
         background-color: #f3ede9;
     }
 
     ul {
-        font-weight:lighter; 
+    
         font-size: 16px;
         list-style-type: none;
-        width:100%;
+        width: 100%;
         display: flex;
         justify-content: space-around;
         align-items: center;
         padding: 0;
         border:none;
-    
+        margin-right: 0%;
     }
 
     li {
-        width:1rem;
+        width:100%;
         margin-right: 30rem;
-        margin-left: 2rem;
+        margin-left: 3rem;
         align-items: center;
-        font-weight: lighter; 
+
     }
 
-    .Nav li {
-        margin-right: 30rem;
-        font-weight: lighter; 
-        width:400rem;
+    .Nav li {   
+        margin-right: 20rem;
+        width:100%;
         letter-spacing: 6px;
         text-align: center;
         color: #4a4a4a;
     }
 
-    .Nav li span {
+    .Nav li span {  
         font-size: 14px;
     }
 
    
     .Option-Nav {
-        width:100%;
-        margin: 0px 30px;
+        width:60%;
+        margin: 10px 20px;
         border:none;
         background-color: inherit;
         color:#8F7B6A;
