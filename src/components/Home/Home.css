@@ -1,0 +1,43 @@
+/* Home.css */
+@import url(https://db.onlinewebfonts.com/c/fb04898d5b14da735b1fdf6e4958d214?family=Helvetica+Neue+LT+Com+37+Thin+Condensed);
+
+/* Grid layout for the content section */
+.content {
+    display: grid;
+    grid-template-areas: "photo description";
+    grid-template-columns: 3fr 2fr;
+    width: 90%;
+    margin-right: 2%;
+    animation: slideleft 1s linear forwards;
+    animation-delay: 1.6s;
+  }
+
+  .img-about {
+    grid-area: photo; 
+    background-color: #c6c1c1;
+    height:80vh;
+  }
+  
+  .about-abt {
+    grid-area: description;
+  }
+  .about{
+    background-color: #f3ede9;
+    margin-top: 15vh;
+    margin-left: -15vh;
+    font-family: "Helvetica Neue LT Com 37 Thin Condensed";
+    color: #4A4A4A;
+  }
+
+  .about h1{
+    align-items: center;
+    color:#4A4A4A;
+   padding-top: 10%;
+   letter-spacing: 4px;
+  }
+  .motus{
+    font-family: "Helvetica Neue LT Com 37 Thin Condensed";;
+    color:#8F7B6A;
+    font-size: 16px;
+    letter-spacing: 4px;
+  }
