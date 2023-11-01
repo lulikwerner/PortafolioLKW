@@ -1,65 +1,166 @@
    /* Navbar.css */
    @import url(https://db.onlinewebfonts.com/c/fb04898d5b14da735b1fdf6e4958d214?family=Helvetica+Neue+LT+Com+37+Thin+Condensed);
 
-    .Nav {
-        margin-top: 0;
-        height: 15vh;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        font-family: "Helvetica Neue LT Com 37 Thin Condensed";
+.Nav {
+    margin-top: 0;
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    font-family: "Helvetica Neue LT Com 37 Thin Condensed";
+    background-color: #f3ede9;
+}
+ul {
+    font-size: 16px;
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    border: none;
+    margin-right: 0%;
+}
+li {
+    width: 100%;
+    margin-right: 30rem;
+    margin-left: 3rem;
+    align-items: center;
+}
+.Nav li {
+    margin-right: 20rem;
+    width: 100%;
+    letter-spacing: 6px;
+    text-align: center;
+    color: #4a4a4a;
+}
+.Nav li span {
+    font-size: 14px; 
+}
+.Option-Nav {
+    width: 60%;
+    margin: 10px 20px;
+    border: none;
+    background-color: inherit;
+    color: #8F7B6A;
+    border-top: 1px solid #8F7B6A;
+    padding-top: 1rem;
+    margin-top: -1rem;
+    transition: border-top-width 0.3s ease;
+}
+.Option-Nav:hover,
+.Option-Nav:active {
+    border-top-width: 3px;
+}
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+.menu-toggle .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #8F7B6A;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.mobile-menu {
+    display: none;
+}
+.Nav.open .menu-toggle .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.Nav.open .menu-toggle .bar:nth-child(2) {
+    opacity: 0;
+}
+.Nav.open .menu-toggle .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+.Nav.open .mobile-menu {
+    display: block;
+}
 
-        background-color: #f3ede9;
+@media screen and (max-width: 1151px) {
+
+    .Nav li {
+        letter-spacing: 3px;
     }
+
+}
+@media screen and (max-width: 1009px) {
 
     ul {
-    
-        font-size: 16px;
-        list-style-type: none;
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding: 0;
-        border:none;
-        margin-right: 0%;
-    }
-
-    li {
-        width:100%;
-        margin-right: 30rem;
-        margin-left: 3rem;
-        align-items: center;
-
-    }
-
-    .Nav li {   
-        margin-right: 20rem;
-        width:100%;
-        letter-spacing: 6px;
-        text-align: center;
-        color: #4a4a4a;
-    }
-
-    .Nav li span {  
         font-size: 14px;
     }
+    .Nav li {
+        letter-spacing: 2px;
+    }
+    .Nav li span {
+        font-size: 12px; 
+    }
 
-   
+}
+
+@media screen and (max-width: 924px) {
+
+    ul {
+        font-size: 14px;
+    }
+    .Nav li {
+        letter-spacing: 2px;
+    }
+    .Nav li span {
+        font-size: 12px; 
+    }
+
+}
+
+
+@media screen and (max-width: 770px) {
+
+    .Nav {
+        height: 6vh;
+    }
+    .menu-toggle {
+        display: block;
+        margin-top: 1vh;
+        margin-left: 1vh;
+    }
+    ul {
+        display: none;
+    }
+    li{
+        display: none;
+    }
     .Option-Nav {
-        width:60%;
-        margin: 10px 20px;
-        border:none;
-        background-color: inherit;
-        color:#8F7B6A;
-        border-top: 1px solid #8F7B6A; /* Top border for the buttons */
-        padding-top: 1rem;
-        margin-top: -1rem;
-        transition: border-top-width 0.3s ease; 
+        border-top: none;   
+        margin-top: 0%;
+        margin-left: 10%;
+        margin-right: 5%;
+        font-size: 18px;
     }
-    
-    .Option-Nav:hover,
-    .Option-Nav:active {
-        border-top-width: 3px; 
-    
+    .Option-Nav:active,
+    .Option-Nav:focus {
+    font-weight: bold; 
     }
+    .Nav.open{
+    height: 100vh;
+    background-color: rgba(243, 237, 233, 0.9);
+    }
+    .Nav.open ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;;
+        width:100%;
+        height: 40vh; 
+        margin-top: 10vh;
+    }
+    .Nav.open ul li {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-toggle .bar {
+        margin: 6px 20px;
+      }
+
+}

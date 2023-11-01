@@ -3,6 +3,6 @@
 body {
   margin: 0;
   flex-direction: row;
-  min-width: 1280px;
+
   min-height: 100vh;
 }
