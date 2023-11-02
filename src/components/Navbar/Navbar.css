@@ -9,6 +9,9 @@
     flex-direction: row;
     font-family: "Helvetica Neue LT Com 37 Thin Condensed";
     background-color: #f3ede9;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 }
 ul {
     font-size: 16px;

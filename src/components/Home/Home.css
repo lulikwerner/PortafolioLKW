@@ -1,7 +1,21 @@
 /* Home.css */
 @import url(https://db.onlinewebfonts.com/c/fb04898d5b14da735b1fdf6e4958d214?family=Helvetica+Neue+LT+Com+37+Thin+Condensed);
-
-/* Grid layout for the content section */
+@keyframes slideFromTop {
+    from {
+      margin-top: -100vh; 
+    }
+    to {
+      margin-top: 35vh; 
+    }
+  }
+  @keyframes slideFromRight {
+    from {
+      transform: translateX(100%); 
+    }
+    to {
+      transform: translateX(0); 
+    }
+  }
 .content {
     display: grid;
     grid-template-areas: "photo description";
@@ -15,7 +29,7 @@
   .img-about {
     grid-area: photo; 
     background-color: #c6c1c1;
-    height:80vh;
+    height:110vh;
   }
   
   .about-abt {
@@ -23,21 +37,48 @@
   }
   .about{
     background-color: #f3ede9;
-    margin-top: 15vh;
-    margin-left: -15vh;
+    margin-top: 35vh;
+    margin-left: -25vh;
     font-family: "Helvetica Neue LT Com 37 Thin Condensed";
     color: #4A4A4A;
+    height: 55vh;
+    animation: slideFromTop 3s ease-out forwards; /* Apply the animation with a 1s duration and ease-out timing function */
+    animation-delay: 0.5s; 
+    position:relative;
+    overflow: hidden; 
   }
-
+  .about em {
+    text-align: center; 
+    display: block; 
+    margin: 20px auto 0;
+  }
   .about h1{
     align-items: center;
     color:#4A4A4A;
-   padding-top: 10%;
-   letter-spacing: 4px;
+    padding-top: 8%;
+    letter-spacing: 4px;
+    margin: 10px 60px;  
   }
   .motus{
     font-family: "Helvetica Neue LT Com 37 Thin Condensed";;
     color:#8F7B6A;
     font-size: 16px;
     letter-spacing: 4px;
+    margin: 20px 60px;  
   }
+  .about-btn{
+    margin: 60px 60px; 
+    color:#4A4A4A;
+    letter-spacing: 2px;
+  }
+  .description{ 
+    margin: 10px 60px;  
+    margin-bottom: 5%; 
+  }
+  .about h1,
+.about h2,
+.about p,
+.about a{
+  animation: slideFromRight 4s ease-out forwards; /* Apply the animation to individual elements */
+  animation-delay: 0.5s; /* Add a delay of 0.5s to start the animation after the page loads */
+}
