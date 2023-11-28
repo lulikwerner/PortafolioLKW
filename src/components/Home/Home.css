@@ -23,62 +23,61 @@
     width: 90%;
     margin-right: 2%;
     animation: slideleft 1s linear forwards;
-    animation-delay: 1.6s;
+
   }
 
-  .img-about {
+  .img-home {
     grid-area: photo; 
     background-color: #c6c1c1;
     height:110vh;
   }
   
-  .about-abt {
+  .home-abt {
     grid-area: description;
   }
-  .about{
+  .home{
     background-color: #f3ede9;
     margin-top: 35vh;
     margin-left: -25vh;
     font-family: "Helvetica Neue LT Com 37 Thin Condensed";
     color: #4A4A4A;
     height: 55vh;
-    animation: slideFromTop 3s ease-out forwards; /* Apply the animation with a 1s duration and ease-out timing function */
-    animation-delay: 0.5s; 
+    animation: slideFromTop 3s ease-out forwards; 
     position:relative;
     overflow: hidden; 
   }
-  .about em {
+  .home em {
     text-align: center; 
     display: block; 
-    margin: 20px auto 0;
+    margin: 2rem auto 2rem 3rem;
   }
-  .about h1{
+  .home h1{
     align-items: center;
     color:#4A4A4A;
     padding-top: 8%;
     letter-spacing: 4px;
-    margin: 10px 60px;  
+    margin: 1rem 4rem;  
   }
   .motus{
     font-family: "Helvetica Neue LT Com 37 Thin Condensed";;
     color:#8F7B6A;
     font-size: 16px;
     letter-spacing: 4px;
-    margin: 20px 60px;  
+    margin: 1rem 4rem;   
   }
-  .about-btn{
-    margin: 60px 60px; 
+  .home-btn{
+    margin: 1rem 4rem;  
     color:#4A4A4A;
     letter-spacing: 2px;
   }
   .description{ 
-    margin: 10px 60px;  
+    margin: 1rem 4rem;   
     margin-bottom: 5%; 
   }
-  .about h1,
-.about h2,
-.about p,
-.about a{
+  .home h1,
+.home h2,
+.home p,
+.home a{
   animation: slideFromRight 4s ease-out forwards; /* Apply the animation to individual elements */
-  animation-delay: 0.5s; /* Add a delay of 0.5s to start the animation after the page loads */
+
 }

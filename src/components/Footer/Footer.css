@@ -1,0 +1,37 @@
+/* Footer.css */
+
+.contentf {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 11vh;
+    padding-left:10rem;
+    font-family: "Helvetica Neue LT Com 37 Thin Condensed";
+    background-color: #D5D5D5; 
+    color: white;
+    letter-spacing: 2px;
+}
+.descriptionf{
+    margin-bottom: 1%;
+ font-size: small;
+}
+.rounded-social-buttons {
+    display: flex;
+    padding-right: 12rem;
+}
+
+.social-button-Github svg,
+.social-button-linkedin svg {
+    color: white;
+}
+.social-button-linkedin {
+    margin-right: 4rem;
+    font-size: 30px; 
+  }
+.social-button-Github {
+    margin-right: 3rem;
+    font-size: 30px; 
+  }
+  
+
+  
