@@ -41,7 +41,7 @@
     margin-left: -25vh;
     font-family: "Helvetica Neue LT Com 37 Thin Condensed";
     color: #4A4A4A;
-    height: 55vh;
+    height: 59vh;
     animation: slideFromTop 3s ease-out forwards; 
     position:relative;
     overflow: hidden; 
@@ -66,7 +66,7 @@
     margin: 1rem 4rem;   
   }
   .home-btn{
-    margin: 1rem 4rem;  
+    margin: 0.5rem 4rem;
     color:#4A4A4A;
     letter-spacing: 2px;
   }

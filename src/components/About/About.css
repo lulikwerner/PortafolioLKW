@@ -10,6 +10,7 @@
   width: 100%;
   margin-right: 2%;
   font-family: "Helvetica Neue LT Com 37 Thin Condensed";
+  
 }
 
 .img-about {
@@ -28,12 +29,16 @@
   margin-left: 7rem;
   background-color: #d5d5d5;
   width: 80vh;
-  height: 50vh;
+  height: 45vh;
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideInRight 3s linear forwards;
+  animation-delay: 1.6s;
 }
 
 .titlea {
-  padding-top: 15vh;
-  padding-left: 8vh;
+  padding-top: 8vh;
+  padding-left: 12vh;
   color: #4a4a4a;
 }
 

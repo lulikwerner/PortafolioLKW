@@ -1,0 +1,77 @@
+@import url(https://db.onlinewebfonts.com/c/fb04898d5b14da735b1fdf6e4958d214?family=Helvetica+Neue+LT+Com+37+Thin+Condensed);
+
+.form_format {
+    margin-top: 5rem;
+    background-color: white;
+    height: 108vh;
+    display: grid;
+    grid-template-areas: 
+        "title-form"
+        "description-form"
+        "my-form";
+    grid-template-rows: 0.1fr 0.2fr 1fr;
+    width: 50%;
+    margin-right: 2%;
+    font-family: "Helvetica Neue LT Com 37 Thin Condensed";
+    margin-left: 25%;
+    margin-bottom: 5%;
+}
+
+.my-form {
+    grid-area: my-form;
+    margin-left: 2%;
+}
+
+.header-form {
+    background-color: #f3ede9;
+    height: 130vh;
+    padding-top: 1%;
+    margin-bottom: 5%;
+}
+
+.box {
+    border: none;
+    outline: none; 
+    margin-top: 8%;
+    padding-left: 2%;
+    width: 95%;
+    height: 5vh;
+    margin-left: 1%;
+    background-color: #f3ede9;
+}
+
+.box3 {
+    position: relative;
+    height: 35vh;
+}
+.box3 input {
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    box-sizing: border-box;
+}
+.title-form {
+    grid-area: title-form;
+    margin-left: 2%;
+}
+
+.description-form {
+    grid-area: description-form;
+    margin-left: 2%;
+    line-height: 25px;
+    margin-top: 1%;
+    width: 90%;
+}
+
+
+.btn-sumbit{
+    background-color: #61615f;
+    color:white;
+    letter-spacing: 1px;
+    margin-top: 4rem;
+    margin-left: 1.5rem;
+    height: 2rem;
+    width: 6rem;
+    font-size: 10px; 
+    border:none;
+}
