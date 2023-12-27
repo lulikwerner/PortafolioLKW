@@ -43,21 +43,27 @@
 .box3 {
     position: relative;
     height: 35vh;
-}
-.box3 input {
-    position: absolute;
-    top: 0px;
+    width: 96%; 
+}   
+.box3 textarea {
+    vertical-align: top;
+    position: relative;
+    width: 96%; 
+    top: 0;
     height: 100%;
-    box-sizing: border-box;
+    resize: none;
 }
+
 .title-form {
     grid-area: title-form;
     margin-left: 2%;
+    padding-left: 2%;
 }
 
 .description-form {
     grid-area: description-form;
     margin-left: 2%;
+    padding-left: 2%;
     line-height: 25px;
     margin-top: 1%;
     width: 90%;
@@ -68,7 +74,7 @@
     background-color: #61615f;
     color:white;
     letter-spacing: 1px;
-    margin-top: 4rem;
+    margin-top: 5rem;
     margin-left: 1.5rem;
     height: 2rem;
     width: 6rem;

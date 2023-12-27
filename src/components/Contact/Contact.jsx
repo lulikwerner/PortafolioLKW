@@ -21,8 +21,8 @@ const Contact = () => {
           <input type="text" name="name" className="box" id="nameInput" placeholder="Name" />
           </div>
           <div className="box3">
-           <input name="text" className="box box3" id="messageInput" placeholder="Message" />
-</div>
+           <textarea  name="text" rows="14" cols="10" className="box box3" id="messageInput" placeholder="Message"></textarea>
+          </div>
           <div className="wrap4">
             <button type="submit" className="btn-sumbit" >
               Submit

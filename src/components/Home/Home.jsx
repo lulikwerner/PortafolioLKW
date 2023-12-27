@@ -8,7 +8,7 @@ const Profile = () => {
                 <main>
                     <section className="content">
                       <div className="img-home">
-                        <img></img>
+                        <img  className ="img-link" src="../src/assets/img/linkedin.jpeg"></img>
                       </div>
                         <div className="home-abt">
                           <div className="home">
