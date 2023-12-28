@@ -25,6 +25,7 @@
 .header-form {
     background-color: #f3ede9;
     height: 130vh;
+    margin-top: 10%;
     padding-top: 1%;
     margin-bottom: 5%;
 }
@@ -51,7 +52,7 @@
     width: 96%; 
     top: 0;
     height: 100%;
-    resize: none;
+   resize: none;
 }
 
 .title-form {

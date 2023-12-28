@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { gFetch } from "/src/utils/gFetch.js"
+import './Portafolio.css'
 
 
 const Portafolio = () => {
@@ -18,15 +19,17 @@ const Portafolio = () => {
 
   return (
     <header>
-      <nav>
-        <section>
+      <nav id="section3">
+        <section className="sectionProject">
           {projects.map(project => (
-            <div key={project.id}>
-              <h2>{project.title}</h2>
-              <img src={project.img} alt={project.title} />
-              
-              <p>{project.description}</p>
-            </div>
+            <div className="cardProject" key={project.id}>
+              <div className="col">
+              <h2 className="titleProject" >{project.title}</h2>
+              <a href={project.link} className="read-btn">See More</a>
+               <p className="descriProject">{project.description}</p>
+               </div>
+              <img className="imgProject" src={project.img} />
+           </div>
           ))}
         </section>
       </nav>

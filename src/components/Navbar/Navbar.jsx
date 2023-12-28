@@ -15,12 +15,20 @@ const Navbar = () => {
             setIsMenuOpen(false); 
         }
     };
-
+    const handleDownloadResume = () => {
+        // Replace 'your_resume.pdf' with the actual path to your resume file
+        const resumePath = '/src/assets/docs/Resume CV4.pdf';
+        const link = document.createElement('a');
+        link.href = resumePath;
+        link.download = 'Your_Resume.pdf';
+        link.click();
+        setIsMenuOpen(false);
+    };
     return (
         <header>
             <nav className={`Nav ${isMenuOpen ? 'open' : ''}`}>
                 <ul>
-                    <li>LUCILA KERSTIN <span>WERNER</span></li>
+                <li onClick={handleDownloadResume}>LUCILA KERSTIN <span>WERNER</span></li>
                     <button onClick={() => scrollToSection('section1')} className="Option-Nav">Home</button>
                     <button onClick={() => scrollToSection('section2')} className="Option-Nav">About</button>
                     <button onClick={() => scrollToSection('section3')} className="Option-Nav">Portfolio</button>

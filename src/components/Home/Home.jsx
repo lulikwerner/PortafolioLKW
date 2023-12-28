@@ -5,7 +5,7 @@ const Profile = () => {
     return (
 
        
-                <main>
+                <main id="section2">
                     <section className="content">
                       <div className="img-home">
                         <img  className ="img-link" src="../src/assets/img/linkedin.jpeg"></img>

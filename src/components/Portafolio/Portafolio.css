@@ -1,0 +1,78 @@
+@import url(https://db.onlinewebfonts.com/c/fb04898d5b14da735b1fdf6e4958d214?family=Helvetica+Neue+LT+Com+37+Thin+Condensed);
+
+.sectionProject{
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+    margin-left: 12vh;
+    margin-right: 12vh;
+    display: absolute; 
+}
+
+.cardProject {
+    display: grid;
+    grid-template-areas: "title-pr img-pr"
+                         "read-pr description-pr";
+    grid-template-columns: 2fr 3fr;
+    width: 90%;
+    animation: slideleft 1s linear forwards;
+    align-items: center;
+    background-color: #898989;
+    text-align: center;
+    margin-top: 20vh;
+    margin-left: auto; 
+    margin-right: auto; 
+    height: 80vh;
+    font-family: "Helvetica Neue LT Com 37 Thin Condensed";
+  }
+  
+
+.titleProject {
+    grid-area:title-pr;
+    width: 100%;
+    margin-top: 40%;
+    font-family: "Helvetica Neue LT Com 37 Thin Condensed";
+    font-size: 16;
+    color: #4A4A4A;
+}
+
+.imgProject {
+grid-area:img-pr;
+margin-top: -20%;
+margin-left: 15%;
+height: 60%;
+  max-width: 70%; 
+  
+}
+.col{
+    margin-left: 20vh;
+    margin-top: 20%;
+    background-color: #f3ede9;
+    height: 80vh;
+    width: 100%;
+}
+
+.descriProject {
+    grid-area:description-pr;
+    margin-top:30%;
+    margin-left: 120%;
+    color:white;
+    font-family: " Helvetica Neue LT Com 37 Thin Condensed";
+    font-size: 12px;
+    width: 100%;
+}
+
+.read-btn{
+    margin: 8rem 5rem;
+  color: #4a4a4a;
+  letter-spacing: 2px;
+  text-decoration: none;
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  border-bottom: 1px solid #4a4a4a; 
+}
+
+.read-btn:hover {
+  border-bottom: 2px solid #4a4a4a; /* Underline color on hover */
+}

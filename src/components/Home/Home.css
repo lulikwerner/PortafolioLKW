@@ -33,10 +33,10 @@
     width: 150vh;
   }
   .img-link {
-    margin-top: 8%;
+    margin-top: 6%;
     margin-left: -40%;
-    width: 200vh; /* Set the desired width */
-    height: 110vh; /* Maintain aspect ratio */
+    width: 200vh; 
+    height: 110vh; 
   }
   .home-abt {
     grid-area: description;

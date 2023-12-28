@@ -3,7 +3,7 @@ import './Contact.css';
 
 const Contact = () => {
   return (
-    <header className="header-form">
+    <header className="header-form" id="section4">
       <meta name="keywords" content="Contact, Work, Quote, Hire"></meta>
       <nav className="form_format">
         <h1 className="title-form">Get in Touch</h1>
