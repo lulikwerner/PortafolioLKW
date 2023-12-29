@@ -10,7 +10,6 @@
     letter-spacing: 2px;
 }
 .descriptionf{
-
  font-size: small;
 }
 .rounded-social-buttons {
@@ -31,5 +30,41 @@
     font-size: 30px; 
   }
   
+  @media screen and (max-width: 840px) {
+    .contentf {
+        padding-left:5rem;
+  }
+  .rounded-social-buttons {
+    padding-right: 8rem;
+}
+}
 
-  
+@media screen and (max-width: 770px) {
+    .contentf {
+        padding-left:3rem;
+  }
+  .rounded-social-buttons {
+    padding-right: 6rem;
+}
+}
+@media screen and (max-width: 770px) {
+    .contentf {
+        padding-left:1.5rem;
+  }
+  .rounded-social-buttons {
+    padding-right: 2rem;
+}
+}
+@media screen and (max-width: 460px) {
+    .contentf {
+        padding-left:1rem;
+  }
+  .descriptionf{
+    width:40%;
+    text-align: center;
+   }
+  .rounded-social-buttons {
+    padding-right: 0rem;
+}
+}
+
