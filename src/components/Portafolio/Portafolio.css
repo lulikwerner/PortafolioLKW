@@ -53,12 +53,12 @@ height: 60%;
 
 .descriProject {
     grid-area:description-pr;
-    margin-top:50%;
+    margin-top:30%;
     margin-left: 120%;
     color:white;
     font-family: " Helvetica Neue LT Com 37 Thin Condensed";
     font-size: 12px;
-    width: 100%;
+    width: 60%;
 }
 
 .read-btn{

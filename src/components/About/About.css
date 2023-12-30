@@ -1,21 +1,28 @@
 @import url(https://db.onlinewebfonts.com/c/fb04898d5b14da735b1fdf6e4958d214?family=Helvetica+Neue+LT+Com+37+Thin+Condensed);
 
+
 .contenta {
   margin-top: 5rem;
   background-color: #f3ede9;
   height: 110vh;
-  display: grid;
-  grid-template-areas: "descriptionAbout photoAbout";
-  grid-template-columns: 2fr 1fr;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   margin-right: 2%;
   font-family: "Helvetica Neue LT Com 37 Thin Condensed";
-  
 }
-
 .img-about {
-  grid-area: photoAbout;
+  display: flex;
   height: 110vh;
+  position: relative;
+  order: 1;
+}
+.img-link-abt{
+  margin-top: 35%;
+  height:80vh;
+  width: 60vh;
 }
 .about{
     opacity: 0;
@@ -24,7 +31,7 @@
     animation-delay: 1.6s;
 }
 .about-abt {
-  grid-area: descriptionAbout;
+  display: flex;
   margin-top: 10rem;
   margin-left: 7rem;
   background-color: #d5d5d5;
@@ -67,5 +74,105 @@
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .img-link-abt{
+    margin-left: -25%;
+  }
+}
+@media screen and (max-width: 1078px) {
+  .contenta {
+    height: 90vh;
+  }
+  .img-link-abt{
+    margin-top: 70%;
+    height:65vh;
+    width: 40vh;
+  }
+  .about-abt {
+    margin-top: 10%;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 840px) {
+  .contenta {
+    height: 90vh;
+  }
+  .about-abt {
+    margin-left: 2rem;
+  }
+  
+}
+@media screen and (max-width: 770px) {
+  .contenta {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;
+
+  }
+  .img-about {
+    margin-top: 5%;
+    display: flex;
+    height: 110vh;
+    position: relative;
+   
+  }
+  .img-link-abt{
+    display: flex;
+    align-items: center;
+    margin-top: 2vh;
+    margin-bottom: 10%;
+    margin-left: auto;
+    height:30vh;
+    width: 20vh;
+  }
+
+  .about-abt {
+    width: 70%;
+    height: 30vh;
+    margin-bottom: 15%;
+    order: 1;
+  } 
+  .titlea {
+    padding-top: 2vh;
+    padding-left: 10.5vh;
+  }
+  
+  .descriptiona {
+    margin-top:3%;
+  }
+  
+
+}
+@media screen and (max-width: 570px) {
+  .contenta {
+    height: 80vh;
+  }
+  .about-abt {
+    margin-top: 10%;
+    height: 40vh;
+  }
+  .titlea {
+    padding-left: 6vh;
+  }
+  .descriptiona {
+    margin-left: 6vh;
+  }
+  .about-btn {
+    margin-left: 6vh;
+  }
+}
+@media screen and (max-width: 570px) {
+  .contenta{
+    height:90vh;
+  }
+  .img-link-abt{
+    margin-top: 35%;
+    margin-left: 10%;
+    height:30vh;
+    width: 20vh;
   }
 }

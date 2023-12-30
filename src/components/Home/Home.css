@@ -29,25 +29,25 @@
     grid-area: photo; 
     background-color: #c6c1c1;
     height:110vh;
-    width: 140vh;
+    width: 110vh;
   }
   .img-link {
     margin-top: 6%;
-    margin-left: -47%;
-    width: 200vh; 
-    height: 110vh; 
+    margin-left: -40%;
+    width: 170vh; 
+    height: 100vh; 
   }
   .home-abt {
     grid-area: description;
   }
   .home{
     background-color: #f3ede9;
-    margin-top: 40vh;
-    margin-left: -70vh;
+    margin-top: 35vh;
+    margin-left: -40vh;
     font-family: "Helvetica Neue LT Com 37 Thin Condensed";
     color: #4A4A4A;
-    height: 50vh;
-    width:105vh;
+    height: 55vh;
+    width:90vh;
     position:relative;
     overflow: hidden; 
   }
@@ -85,6 +85,11 @@
 .home a{
   animation: slideFromRight 4s ease-out forwards; 
 }
+@media screen and (max-width: 1240px) {
+.home{
+ width:80vh;
+}
+}
 
 @media screen and (max-width: 1151px) {
 
@@ -99,10 +104,10 @@
     height: 70vh; 
   } 
   .home{
-    margin-top: 30%;
-    margin-left: -75%;
+    margin-top: 25%;
+    margin-left: -65%;
     height: 42vh;
-    width:70vh;
+
   }
   .home h1{
     padding-top:2%;
@@ -157,7 +162,7 @@
 }
 @media screen and (max-width: 940px) {
   .img-home {
-    height:60vh;
+    height:70vh;
     width: 80vh;
   }
   .img-link {
@@ -167,10 +172,10 @@
     height: 50vh; 
   }
   .home{
-    margin-top: 45%;
-    margin-left: -80%;
-    height: 30vh;
-    width:55vh;
+    margin-top: 40%;
+    margin-left: -65%;
+    height:33vh ;
+    width:65vh;
   }
   .home h1{
     margin-top: 0%;
@@ -192,15 +197,16 @@
 @media screen and (max-width: 840px) {
   .img-home {
     width: 75vh;
+    height:80vh;
   }
   .img-link {
+    margin-top: 0%;
     margin-left: -30%;
   }
   .home{
-    margin-top: 50%;
-    margin-left: -85%;
-    height:33vh ;
-    width:50vh;
+    margin-top: 40%;
+    margin-left: -60%;
+
   }
 }
 @media screen and (max-width: 770px) {
@@ -215,14 +221,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 15%;  
     margin-left: 10%;
     height:75vh;
     max-width: 60vh;
   }  
   .img-link {
-    margin-top: -5%;
-    margin-left: 0%;
+    margin-top: 0%;
+    margin-left: -5%;
     width: 70vh; 
     height: 40vh; 
 
@@ -233,6 +238,9 @@
     margin-right: 30%;
     height: 35vh;
     width:45vh;
+  }
+  .about{
+    margin-bottom:5%;
   }
 }
 @media screen and (max-width: 570px) {
