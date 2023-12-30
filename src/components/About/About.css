@@ -87,6 +87,7 @@
   }
   .img-link-abt{
     margin-top: 70%;
+    margin-left: 0%;
     height:65vh;
     width: 40vh;
   }
@@ -111,7 +112,7 @@
     flex-direction: column;
     justify-content: space-between; 
     align-items: center;
-
+    margin-top: 30%;
   }
   .img-about {
     margin-top: 5%;
@@ -163,16 +164,5 @@
   }
   .about-btn {
     margin-left: 6vh;
-  }
-}
-@media screen and (max-width: 570px) {
-  .contenta{
-    height:90vh;
-  }
-  .img-link-abt{
-    margin-top: 35%;
-    margin-left: 10%;
-    height:30vh;
-    width: 20vh;
   }
 }

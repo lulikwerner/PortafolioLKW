@@ -19,7 +19,7 @@
 .content {
     display: grid;
     grid-template-areas: "photo description";
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 3fr 0fr;
     width: 90%;
     margin-right: 2%;
     animation: slideleft 1s linear forwards;
@@ -37,10 +37,9 @@
     width: 170vh; 
     height: 100vh; 
   }
-  .home-abt {
-    grid-area: description;
-  }
+
   .home{
+    grid-area: description;
     background-color: #f3ede9;
     margin-top: 35vh;
     margin-left: -40vh;
@@ -104,10 +103,10 @@
     height: 70vh; 
   } 
   .home{
-    margin-top: 25%;
-    margin-left: -65%;
-    height: 42vh;
-
+    margin-top: 35%;
+    margin-left: -85%;
+    height: 40vh;
+    width:50vh;
   }
   .home h1{
     padding-top:2%;
@@ -125,8 +124,8 @@
 @media screen and (max-width: 1078px) {
   .home{
     margin-top: 35%;
-    margin-left: -80%;
-    width:65vh;
+    margin-left: -90%;
+
   }
 }
 @media screen and (max-width: 1040px) {
@@ -142,9 +141,9 @@
   }
   .home{
     margin-top: 45%;
-    margin-left: -80%;
+    margin-left: -95%;
     height: 33vh;
-    width:60vh;
+    width:48vh;
   }
   .home h1{
     font-size: 18px;
@@ -172,10 +171,10 @@
     height: 50vh; 
   }
   .home{
-    margin-top: 40%;
-    margin-left: -65%;
+    margin-top: 48%;
+    margin-left: -95%;
     height:33vh ;
-    width:65vh;
+    width:45vh;
   }
   .home h1{
     margin-top: 0%;
@@ -200,12 +199,12 @@
     height:80vh;
   }
   .img-link {
-    margin-top: 0%;
+    margin-top: 10%;
     margin-left: -30%;
   }
   .home{
     margin-top: 40%;
-    margin-left: -60%;
+    margin-left: -98%;
 
   }
 }
@@ -223,20 +222,20 @@
     align-items: center;
     margin-left: 10%;
     height:75vh;
-    max-width: 60vh;
+    max-width: 98%;
   }  
   .img-link {
     margin-top: 0%;
-    margin-left: -5%;
-    width: 70vh; 
+    margin-left: 0%;
+    width: 60vh; 
     height: 40vh; 
 
   }
   .home{
-    margin-top: -90%;
-    margin-left: 8%;
+    margin-top: -60%;
+    margin-left: 40%;
     margin-right: 30%;
-    height: 35vh;
+    height: 25vh;
     width:45vh;
   }
   .about{
@@ -252,10 +251,11 @@
 
 }
 .home{
-  height: 40vh;
+  height: 30vh;
   width: 35vh;
-  margin-top:-130%;
-  margin-left: 8%;
+  margin-top:-90%;
+  margin-left: 35%;
+  margin-right:25%;
 }
 .home h1{
   margin-top: 2%;

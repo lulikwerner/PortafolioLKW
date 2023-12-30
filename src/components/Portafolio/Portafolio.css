@@ -31,7 +31,6 @@
     width: 100%;
     margin-top: 40%;
     font-family: "Helvetica Neue LT Com 37 Thin Condensed";
-    font-size: 16;
     color: #4A4A4A;
 }
 
@@ -40,8 +39,7 @@ grid-area:img-pr;
 margin-top: -20%;
 margin-left: 15%;
 height: 60%;
-  max-width: 70%; 
-  
+max-width: 70%; 
 }
 .col{
     margin-left: 20vh;
@@ -53,7 +51,7 @@ height: 60%;
 
 .descriProject {
     grid-area:description-pr;
-    margin-top:30%;
+    margin-top:0%;
     margin-left: 120%;
     color:white;
     font-family: " Helvetica Neue LT Com 37 Thin Condensed";
@@ -76,3 +74,170 @@ height: 60%;
 .read-btn:hover {
   border-bottom: 2px solid #4a4a4a; /* Underline color on hover */
 } 
+
+@media screen and (max-width: 1550px) {
+  .descriProject {
+    margin-top: 30%;
+  }
+
+} 
+@media screen and (max-width: 1380px) {
+  .descriProject {
+    margin-top: 50%;
+  }
+  .imgProject {
+    margin-top: -25%;
+    }
+} 
+@media screen and (max-width: 1240px) {
+  .descriProject {
+    margin-top: 60%;
+  } 
+  .imgProject {
+    margin-top: -30%;
+    }
+    .col{
+      margin-left: 13vh;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .descriProject {
+    margin-top: 70%;
+  }
+  .imgProject {
+    margin-top: -40%;
+    }
+}
+@media screen and (max-width: 1040px) {
+  .descriProject {
+    margin-top: 85%;
+  }
+    .col{
+      margin-left: 10vh;
+  }
+}
+@media screen and (max-width: 940px) {
+  .descriProject {
+    margin-top: 130%;
+  }
+  .imgProject {
+    margin-top: -130%;
+    margin-left: 20%;
+    height: 40%;
+    }
+    .col{
+      margin-left: 10vh;
+  }
+  
+}
+@media screen and (max-width: 840px) {
+  .descriProject {
+margin-top: 190%;
+  }
+  .imgProject {
+    margin-top: -70%;
+    height: 50%;
+    }
+    .col{
+      margin-left: 8vh;
+      height: 70vh;
+  }
+  .cardProject {
+    height: 70vh;
+  }
+}
+@media screen and (max-width: 770px) {
+  .descriProject {
+    margin-top: 150%;
+    font-size: 10px;
+  }
+  .cardProject {
+    margin-left: 5%;
+    height: 50vh;
+  }
+  .imgProject {
+    margin-top: -60%;
+    margin-left: -3%;
+    height: 25vh;
+    }
+    .titleProject {
+      font-size: 14px;
+      margin-left: -5%;
+    }
+    .read-btn{
+      font-size: 12px;
+      margin-left: 30%;
+    }
+  .col{
+    margin-left: 10%;
+    height: 50vh;
+  }
+}
+@media screen and (max-width: 680px) {
+  .descriProject {
+    margin-top: 170%;
+    font-size: 10px;
+  }
+  .imgProject {
+    margin-top: -80%;
+    margin-left: -3%;
+    height: 25vh;
+    width: 40vh;
+    }
+}
+@media screen and (max-width: 590px) {
+  .imgProject {
+    margin-top: -75%;
+    margin-left: -3%;
+    height: 20vh;
+    width: 30vh;
+    }
+    .cardProject {
+      margin-top: 15%;
+      height: 40vh;
+    }
+    .col{
+      margin-left: 10%;
+      height: 40vh;
+    }
+}
+@media screen and (max-width: 530px) {
+  .cardProject {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    width:100%;
+  }
+
+  .col {
+    width: 18vh;
+    height:18vh;
+    margin-left: 2%;
+    margin-top:15%;
+    order:1;
+  }
+
+  .imgProject {
+    margin-top: 5%; 
+    height: 15vh;
+  }
+
+  .titleProject {
+    margin-top: 1rem; 
+  }
+  .descriProject {
+    margin-top: 30%;
+    margin-left: 20%;
+    color: #4A4A4A;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .titleProject {
+  margin-left: 0%;
+  }
+  .col {
+    width: 12vh;
+  }
+}

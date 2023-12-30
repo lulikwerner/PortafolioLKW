@@ -10,7 +10,7 @@ const Profile = () => {
                       <div className="img-home">
                         <img  className ="img-link" src="../src/assets/img/linkedin.jpeg"></img>
                       </div>
-                        <div className="home-abt">
+                        
                           <div className="home">
                             <h1 className="title2">ABOUT ME</h1>
                             <h2 className="motus">Designing is my passion</h2>
@@ -23,7 +23,7 @@ const Profile = () => {
                             </p>
                             <a href="" className="home-btn">Hire Me</a>
                             </div>
-                        </div>
+                   
                     </section>
                 </main>
     );
