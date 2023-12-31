@@ -8,7 +8,6 @@ import Footer from './components/Footer/Footer'
 import './App.css'
 import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 
-
 function App() {
   const [count, setCount] = useState(0)
 
@@ -19,7 +18,6 @@ function App() {
       <Home/>
       <About/>
       <Portafolio/>
-      <Contact/>
       <Footer/>
       </BrowserRouter>
       
@@ -27,4 +25,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
