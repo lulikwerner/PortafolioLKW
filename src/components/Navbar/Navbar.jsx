@@ -17,7 +17,7 @@ const Navbar = () => {
     };
     const handleDownloadResume = () => {
         // Replace 'your_resume.pdf' with the actual path to your resume file
-        const resumePath = '/src/assets/docs/Resume CV4.pdf';
+        const resumePath = '../assets/docs/Resume CV4.pdf';
         const link = document.createElement('a');
         link.href = resumePath;
         link.download = 'Your_Resume.pdf';

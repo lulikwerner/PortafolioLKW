@@ -15,7 +15,7 @@ const About = () => {
         <main id="section1">
             <section className="contenta">
                 <div className="img-about">
-                    <img className="img-link-abt" src="../src/assets/img/office.png" />
+                    <img className="img-link-abt" src="../assets/img/office.png" />
                 </div>
                 <div className="about-abt">
                     <div className="about">
