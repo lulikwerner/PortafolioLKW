@@ -241,3 +241,15 @@ margin-top: 190%;
     width: 12vh;
   }
 }
+@media screen and (max-width: 390px) {
+  .col{
+    width: 70%;
+  }
+  .read-btn{
+    width: 70%;
+    margin: 0rem;
+  }
+.descriProject {
+  margin-top: 15%;
+}
+}

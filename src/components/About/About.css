@@ -93,7 +93,7 @@
   }
   .about-abt {
     margin-top: 10%;
-    font-size: 14px;
+
   }
 }
 @media screen and (max-width: 840px) {
@@ -124,10 +124,10 @@
   .img-link-abt{
     display: flex;
     align-items: center;
-    margin-top: 2vh;
+    margin-top: 1vh;
     margin-bottom: 10%;
     margin-left: auto;
-    height:30vh;
+    height:35vh;
     width: 20vh;
   }
 
@@ -150,12 +150,15 @@
 }
 @media screen and (max-width: 570px) {
   .contenta {
+    display: flex;
+    align-items: center;
     height: 80vh;
   }
   .about-abt {
     margin-top: 10%;
     height: 40vh;
   }
+  
   .titlea {
     padding-left: 6vh;
   }
@@ -164,5 +167,14 @@
   }
   .about-btn {
     margin-left: 6vh;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .contenta {
+    height: 90vh;
+  }
+  .about-abt{
+   margin-left: -5%;
   }
 }
