@@ -134,6 +134,9 @@ max-width: 70%;
   .descriProject {
 margin-top: 190%;
   }
+  .read-btn{
+    margin:8rem 2rem;
+  }
   .imgProject {
     margin-top: -70%;
     height: 50%;
@@ -166,7 +169,7 @@ margin-top: 190%;
     }
     .read-btn{
       font-size: 12px;
-      margin-left: 30%;
+      margin-left: 5%;
     }
   .col{
     margin-left: 10%;
@@ -186,6 +189,9 @@ margin-top: 190%;
     }
 }
 @media screen and (max-width: 590px) {
+  .read-btn{
+    margin-left: 15%;
+  }
   .imgProject {
     margin-top: -75%;
     margin-left: -3%;
@@ -208,16 +214,18 @@ margin-top: 190%;
     align-items: center; 
     text-align: center; 
     width:100%;
+    height: 45vh;
   }
-
+  .read-btn{
+    margin-left: 4%;
+  }
   .col {
-    width: 18vh;
-    height:18vh;
+    width: 22vh;
+    height:23vh;
     margin-left: 2%;
     margin-top:15%;
     order:1;
   }
-
   .imgProject {
     margin-top: 5%; 
     height: 15vh;
@@ -234,6 +242,12 @@ margin-top: 190%;
 }
 
 @media screen and (max-width: 500px) {
+  .cardProject {
+    height: 50vh;
+  }
+  .read-btn{
+    margin-left: 20%;
+  }
   .titleProject {
   margin-left: 0%;
   }
@@ -242,8 +256,12 @@ margin-top: 190%;
   }
 }
 @media screen and (max-width: 390px) {
+  .cardProject {
+    height: 45vh;
+  }
   .col{
-    width: 70%;
+    width: 18vh;
+    height: 22vh;
   }
   .read-btn{
     width: 70%;
