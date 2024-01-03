@@ -27,9 +27,9 @@ const Navbar = () => {
         link.click();
         setIsMenuOpen(false);
 
-        toast.success('Resumen Donwloaded', {
+        toast.success('Resumen Downloaded', {
             position: toast.POSITION.TOP_RIGHT,
-            autoClose: 3000,
+            autoClose: 2000,
             icon: '👍',
             style: { color: '#997066' },
         });
