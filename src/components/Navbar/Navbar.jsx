@@ -1,20 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './Navbar.css';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const sectionRef = useRef(null);
 
     const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen);
+        setIsMenuOpen(prevState => !prevState);
     };
 
-    const scrollToSection = (sectionId) => {
-        const section = document.querySelector(`#${sectionId}`);
-        if (section) {
-            section.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            setIsMenuOpen(false); 
+    const scrollToSection = () => {
+        if (sectionRef.current) {
+            sectionRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            setIsMenuOpen(false);
         }
     };
+
     const handleDownloadResume = () => {
         // Replace 'your_resume.pdf' with the actual path to your resume file
         const resumePath = '../assets/docs/Resume CV4.pdf';
@@ -23,12 +26,20 @@ const Navbar = () => {
         link.download = 'Your_Resume.pdf';
         link.click();
         setIsMenuOpen(false);
+
+        toast.success('Resumen Donwloaded', {
+            position: toast.POSITION.TOP_RIGHT,
+            autoClose: 3000,
+            icon: '👍',
+            style: { color: '#997066' },
+        });
     };
+
     return (
         <header>
             <nav className={`Nav ${isMenuOpen ? 'open' : ''}`}>
                 <ul>
-                <li onClick={handleDownloadResume}>LUCILA KERSTIN <span>WERNER</span></li>
+                    <li onClick={handleDownloadResume}>LUCILA KERSTIN <span>WERNER</span></li>
                     <button onClick={() => scrollToSection('section1')} className="Option-Nav">Home</button>
                     <button onClick={() => scrollToSection('section2')} className="Option-Nav">About</button>
                     <button onClick={() => scrollToSection('section3')} className="Option-Nav">Portfolio</button>
@@ -40,11 +51,14 @@ const Navbar = () => {
                     <div className="bar"></div>
                 </div>
             </nav>
+            <div ref={sectionRef}></div>
+            <ToastContainer />
         </header>
     );
 };
 
 export default Navbar;
+
 
                         
 
