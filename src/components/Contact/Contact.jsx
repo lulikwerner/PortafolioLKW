@@ -1,38 +1,55 @@
+// Contact.js
 import React from 'react';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './Contact.css';
+import { db } from '../firebase/config.js';
+import { addDoc, collection } from 'firebase/firestore';
 
 const Contact = () => {
-  const handleFormSubmit = (e) => {
+  const handleFormSubmit = async (e) => {
     e.preventDefault();
-  
+
     // Check if the form fields are not empty
     const email = document.getElementById('emailInput').value.trim();
     const name = document.getElementById('nameInput').value.trim();
     const message = document.getElementById('messageInput').value.trim();
+    
     if (!email || !name || !message) {
       // Show error toast for empty fields
       toast.error('Please fill in all fields!', {
         position: toast.POSITION.TOP_RIGHT,
         autoClose: 3000,
-        icon:'👎 ',
+        icon: '👎 ',
         style: { color: '#997066' },
       });
       return;
     }
 
-    // If form fields are not empty, show success toast
-    toast.success('Request Sent!', {
-      position: toast.POSITION.TOP_RIGHT,
-      autoClose: 3000, 
-      icon: '👍',
-      style: { color: '#997066' },
-    });
+    try {
+      // Save message to Firebase
+      await addDoc(collection(db, 'ContactFormData'), {
+        email: email,
+        name: name,
+        message: message,
+      });
 
-    document.getElementById('my-form').reset();
+      // If form fields are not empty, show success toast
+      toast.success('Request Sent!', {
+        position: toast.POSITION.TOP_RIGHT,
+        autoClose: 3000,
+        icon: '👍',
+        style: { color: '#997066' },
+      });
+
+      // Clear form
+      document.getElementById('my-form').reset();
+    } catch (error) {
+      console.error('Error adding document: ', error);
+    }
   };
 
+  
   return (
     <header className="header-form" id="section4">
       <meta name="keywords" content="Contact, Work, Quote, Hire"></meta>

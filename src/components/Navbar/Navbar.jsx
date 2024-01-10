@@ -11,9 +11,10 @@ const Navbar = () => {
         setIsMenuOpen(prevState => !prevState);
     };
 
-    const scrollToSection = () => {
-        if (sectionRef.current) {
-            sectionRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    const scrollToSection = (sectionId) => {
+        const section = document.querySelector(`#${sectionId}`);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth', block: 'start' });
             setIsMenuOpen(false);
         }
     };
