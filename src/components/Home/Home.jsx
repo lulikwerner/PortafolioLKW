@@ -1,6 +1,15 @@
 import React from 'react';
 import './Home.css';
 
+
+const scrollToSection = (sectionId) => {
+    const section = document.querySelector(`#${sectionId}`);
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        setIsMenuOpen(false);
+    }
+};
+
 const Profile = () => {
     return (
 
@@ -21,7 +30,7 @@ const Profile = () => {
                                     of us"</em><br/> When I'm not coding or pushing pixels you'll find me in
                                 the gym or at the beach.
                             </p>
-                            <a href="" className="home-btn">Hire Me</a>
+                            <button onClick={() => scrollToSection('section4')} className="home-btn">Hire Me</button>
                             </div>
                    
                     </section>

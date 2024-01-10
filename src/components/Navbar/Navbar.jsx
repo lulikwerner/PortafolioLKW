@@ -41,8 +41,8 @@ const Navbar = () => {
             <nav className={`Nav ${isMenuOpen ? 'open' : ''}`}>
                 <ul>
                     <li onClick={handleDownloadResume}>LUCILA KERSTIN <span>WERNER</span></li>
-                    <button onClick={() => scrollToSection('section1')} className="Option-Nav">Home</button>
                     <button onClick={() => scrollToSection('section2')} className="Option-Nav">About</button>
+                    <button onClick={() => scrollToSection('section1')} className="Option-Nav">Home</button>
                     <button onClick={() => scrollToSection('section3')} className="Option-Nav">Portfolio</button>
                     <button onClick={() => scrollToSection('section4')} className="Option-Nav">Contact</button>
                 </ul>
