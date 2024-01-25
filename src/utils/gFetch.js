@@ -5,7 +5,7 @@ let projects = [
     { id: 4, title: "MIA JEWELERS", img:"../assets/img/jewelry2.png", description:"Javascript - React - CSS - HTML", link:"https://miajewelers.netlify.app/" },
     { id: 5, title: "BMI", img:"../assets/img/scale.png", description:"Javascript - CSS - HTML", link:"https://bodymass-calculator.netlify.app/" },
     { id: 6, title: "PORTAFOLIO", img:"../assets/img/ecommerce.png", description:" Firebase - SAAS - CSS - HTML - Boostrap ", link:"https://lkportafolio.netlify.app/"},
-    { id: 7, title: "CODER STORE", img:"../assets/img/coderstore.png", description:"Python - Virtualenv - Node- CSS - HTML", link:"https://github.com/lucasbadino/trabajo_1"}
+    { id: 7, title: "CODER STORE", img:"../assets/img/coderstore.png", description:"Python - Virtualenv - Node- CSS - HTML", link:"https://github.com/lulikwerner/CoderStore.git"}
 
   ];
   
